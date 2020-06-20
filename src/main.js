@@ -6,6 +6,10 @@ import store from './store'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// icon
+import '@/icons' 
+ // global css
+import '@/styles/index.scss'
 
 //引入element-ui
 Vue.use(ElementUI)

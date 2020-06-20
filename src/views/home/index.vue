@@ -1,7 +1,13 @@
 <template>
-    <div>test</div>
+    <div class="dashboard-container">
+    <div class="dashboard-text">name : test</div>
+  </div>
 </template>
-
+<script>
+export default {
+  name: 'home',
+}
+</script>
 <style lang="scss" scoped>
 .dashboard {
   &-container {

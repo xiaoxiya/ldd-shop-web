@@ -33,14 +33,20 @@ import Layout from '@/layout'
  */
 export const constantRoutes = [
     {
+        path: '/404',
+        component: () => import('@/views/404'),
+        hidden: true
+      },
+    {
         path: '/',
         component: Layout,
         redirect: '/home',
+        // 这里开始对应的路由都会显示在app-main中
         children: [{
             path: 'home',
-            name: 'home',
+            name: 'Home',
             component: () => import('@/views/home/index'),
-            // meta: { title: 'home', icon: 'home' }
+            meta: { title: 'home', icon: 'dashboard' }
         }]
     }
 ]
